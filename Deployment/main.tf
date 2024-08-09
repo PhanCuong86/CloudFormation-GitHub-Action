@@ -6,7 +6,7 @@ terraform {
       encrypt = true
     }
 }
-
+#test
 provider "aws" {
     region =  var.aws-region
     #profile = "user1"
