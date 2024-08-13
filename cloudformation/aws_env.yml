@@ -104,6 +104,7 @@ Resources:
           sudo cp ~/CloudFormation-GitHub-Action/src/index.html /usr/share/nginx/html/index.html
           sudo systemctl start nginx
           sudo systemctl enable nginx
+  # 104 Sao chép file index.html từ repository đã clone vào thư mục mặc định của Nginx (/usr/share/nginx/html/), đây là nơi Nginx sẽ phục vụ file HTML.
 
 Outputs:
   InstancePublicDNS:
