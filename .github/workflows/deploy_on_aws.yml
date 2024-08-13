@@ -68,7 +68,7 @@ jobs:
         sleep 30
         CURL_OUTPUT=$(curl -v http://$(aws cloudformation describe-stacks --stack-name nginx-stack-test --query 'Stacks[0].Outputs[?OutputKey==`InstancePublicDNS`].OutputValue' --output text) 2>&1)
         echo "CURL_OUTPUT: $CURL_OUTPUT"
-        EXPECTED_STRING="<h1>Hello, World!</h1>"
+        EXPECTED_STRING="<h1>phan cuong</h1>"
          # Check if the expected string is in the curl output
         if echo "$CURL_OUTPUT" | grep -q "$EXPECTED_STRING"; then
           echo "Validation successful: The string '$EXPECTED_STRING' was found."
