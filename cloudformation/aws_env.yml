@@ -100,8 +100,8 @@ Resources:
           sudo yum update -y
           sudo yum install -y nginx git aws-cli
           TOKEN=$(aws ssm get-parameter --name "cuong" --with-decryption --query "Parameter.Value" --output text)
-          git clone https://PhanCuong86:${TOKEN}@github.com/PhanCuong86/hello-world-nginx ~/hello-world-nginx
-          sudo cp ~/hello-world-nginx/src/index.html /usr/share/nginx/html/index.html
+          git clone https://PhanCuong86:${TOKEN}@github.com/PhanCuong86/CloudFormation-GitHub-Action ~/CloudFormation-GitHub-Action
+          sudo cp ~/CloudFormation-GitHub-Action/src/index.html /usr/share/nginx/html/index.html
           sudo systemctl start nginx
           sudo systemctl enable nginx
 
